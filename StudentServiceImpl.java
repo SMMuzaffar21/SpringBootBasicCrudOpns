@@ -44,7 +44,7 @@ public class StudentServiceImpl implements StudentService{
 
 
         if(Objects.nonNull(student.getStudentDepartment()) && !"".equalsIgnoreCase(student.getStudentDepartment())){
-            studentFromDb.setStudentName(student.getStudentDepartment());
+            studentFromDb.setStudentDepartment(student.getStudentDepartment());
         }
         return studentRepository.save(studentFromDb);
     }
